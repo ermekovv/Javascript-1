@@ -1,0 +1,20 @@
+  <style>
+  	h1{
+  		margin-top: 50px;
+  		height: 600px;
+  	}
+  </style>
+
+  
+
+<h1>Прокрутите вниз</h1>
+<p>Текущая прокрутка = <b id="showScroll">640px</b></p>
+<h1>Вы заматили как изменяеться текущая прокрутка</h1>
+
+
+
+<script >
+window.addEventListener('scroll', function() {
+  document.getElementById('showScroll').innerHTML = pageYOffset + 'px';
+});
+</script>

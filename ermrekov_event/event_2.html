@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		a.button7 {
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset;
+  transition: 0.2s;
+} 
+	</style>
+</head>
+<body>
+    <a href="#" id="er1" class="button7">кнопка</a>
+    <p id="er2"></p>
+
+	<script>
+      
+
+      let a = document.getElementById("er1");
+       a.addEventListener('mouseover', function() {
+         let b = document.getElementById("er2");
+         b.innerHTML = "Вы навели курсор на кнопку"
+       })
+
+		
+	</script>
+</body>
+</html>

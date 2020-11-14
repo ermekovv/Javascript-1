@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		let a = prompt("Введите число");
+		if (a < 60){
+			alert("0 " + a)
+		}
+		else if(a == 60){
+			alert ("1" + " 00")
+		}
+		else{
+			if((a / 60) > 24){
+			let c = 0;
+			let m = 0;
+			let k = a / 60;
+			for (let i = 0; i < k; i++){
+              c++;
+              if(c == 24){
+              	c = 0;
+              	m++;
+              }}
+            a = a - (c * 60); 
+
+              let b = a % 60;
+			a -= b;
+			a = a / 60;
+			alert(c + " " + a + " " + b);
+			
+			}
+			else{
+			let b = a % 60;
+			a -= b;
+			a = a / 60;
+			alert(a + " " + b)}
+		}
+	</script>
+</body>
+</html>

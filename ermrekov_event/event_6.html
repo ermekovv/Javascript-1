@@ -1,0 +1,24 @@
+<style>
+  .invalid { border-color: red; }
+  #error { color: red }
+</style>
+
+Ваш gmail: <input type="email" id="input">
+
+<div id="error"></div>
+
+<script>
+input.onblur = function() {
+  if (!input.value.includes('@g')) { 
+    input.classList.add('invalid');
+    error.innerHTML = 'Введите правильный email.'
+  }
+};
+
+input.onfocus = function() {
+  if (this.classList.contains('invalid')) {
+    this.classList.remove('invalid');
+    error.innerHTML = "";
+  }
+};
+</script>

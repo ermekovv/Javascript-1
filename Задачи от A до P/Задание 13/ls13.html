@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+<script>
+	let a = +prompt("Количество сомов");
+    let b = +prompt("Количество тыйын");
+    let n = +prompt("Количество еды");
+
+    let s = a * n;
+    let t = b * n;
+
+    if (t >= 100) {
+
+        let c = Math.trunc(t / 100);
+        let k = t - c * 100;
+
+       
+        alert(`${n} пирошков будет стоить ${s + c} сом ${k} тыйын`);
+    } else {
+          
+
+        alert(`${n} пирошков будет стоить ${s} сом ${t} тыйын`);
+
+    }
+    </script>
+	
+</body>
+</html>

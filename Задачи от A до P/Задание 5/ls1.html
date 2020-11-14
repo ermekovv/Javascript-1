@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var a = +prompt("введите число 2", 108);
+		let b = +prompt("Ведите число 2" , 2);
+		var kon = 0;
+		
+        function km(){
+		if(a > 0 && !isNaN(b) ) {
+			var c = a * b;
+			
+			for(var i = 0; i < c; i++){
+				kon += 1;
+				if(kon == 108){
+					kon = 0;
+				}
+				
+
+			}
+			return + kon;
+		}
+		else if(a < 0 && !isNaN(b) ) {
+			var c = a * b;
+			for(var i = 0; i < c; i++){
+				kon += 1;
+				if(kon == 108){
+					kon = 0;
+				}
+				
+
+			}
+			return '-' + kon;
+		}
+
+		else {
+			return "nat";
+		}
+      }
+
+      alert(km());
+	</script>
+	
+</body>
+</html>
